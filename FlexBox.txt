@@ -1,16 +1,41 @@
 What is flex box?
 
-It is also called flexible box model.
-It is basically a layout mode/model that provides easy and clean way to 
+-It is also called flexible box model.
+-It is basically a layout mode/model that provides easy and clean way to 
 arrange items in a container
 
-CSS widths, floats to arrange items on the page eg: three boxes on the row. the factor in the margin, padding, borders and it can all be taken care of by flexbox
-
+-CSS widths, floats to arrange items on the page eg: three boxes on the row. the factor in the margin, padding, borders and it can all be taken care of by flexbox
+------------------------------------------
 Benfits of using Flexbox:
-There's no floats at all.
-It's responsive, mobile friendly.
-You can you use it for media query.
-Positioning child elements is much easier. 
-Flex container's margin do not collapse with the margins of it's contents. 
-Order of the elements can easily be changed without editing 
+-There's no floats at all.
+-It's responsive, mobile friendly.
+-You can you use it for media query.
+-Positioning child elements is much easier. 
+-Flex container's margin do not collapse with the margins of it's contents. 
+-Order of the elements can easily be changed without editing 
 the source HTML
+------------------------------------------
+Concepts of flexbox:
+-The ability to alter item within height and width to best fit in it's container's
+available free space.
+-Flexbox is direction-agnostic(This is different than CSS block model which is vertically biased and inline which is horizontally biased. Flexbox works well for both)
+-Flexbox was intially created for small-scale layouts while the upcomming "Grid"
+specification is for large scale.This "Grid" system works
+
+HowFlexBoxLooks.jpg
+------------------------------------------
+FlexBox properties:
+
+dispaly:flex | inline-flex;
+flex-direction: row | column
+flexwrap: wrap | nowrap | wrapreverse
+flex-basis: <length>(same as width)
+justify-content: flex-start | flex-end |center (If we want to align to left right or center)
+align-self: flex-start | flex-end | center (default alignment can be overridden for individual flex item)
+align-items:This is the behaviour for how the flex items are laid out alog the cross access 
+align-content: flex-start | flex-end | center
+flex-grow:<number>;
+flex-shrink:<number>;
+(flex grow and shrink we can make different elements in the row have different sizes)
+flex:<integer>;(both of above put togeather)
+order:<integer>;(change the order of html without having to change the HTML)
