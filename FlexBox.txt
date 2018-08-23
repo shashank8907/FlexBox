@@ -1,0 +1,16 @@
+What is flex box?
+
+It is also called flexible box model.
+It is basically a layout mode/model that provides easy and clean way to 
+arrange items in a container
+
+CSS widths, floats to arrange items on the page eg: three boxes on the row. the factor in the margin, padding, borders and it can all be taken care of by flexbox
+
+Benfits of using Flexbox:
+There's no floats at all.
+It's responsive, mobile friendly.
+You can you use it for media query.
+Positioning child elements is much easier. 
+Flex container's margin do not collapse with the margins of it's contents. 
+Order of the elements can easily be changed without editing 
+the source HTML
