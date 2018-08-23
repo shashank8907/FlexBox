@@ -10,10 +10,31 @@
 <body>
         <style>
                 .container-1{
-                    /* 
+                    /* 1
                     To make all the three boxes go side by side
                     */
                     display: flex;
+                    
+                    /* 
+                    To make auto-matic height -
+                    since box 1 is flex 2 
+                    it has more width.
+                    but the border height remains same
+                    compared to others. 
+                    
+                    Now the box1 become shorter
+                    and moved to the top
+        
+                    align-items: flex-start;
+                    Now the box1 becomes shorter and moved to the bottom
+                    align-items: flex-end;
+                    You can move it to the center and by default it is streched
+                    
+
+                    */
+                    
+
+
                 }
             
                 .container-1 div{
@@ -22,13 +43,20 @@
                     
                 }
                 .box-1{
-                    flex:1;
+                    flex:2;
+                    /* 2 
+                    To rearrange the order
+
+                    */
+                    order: 2;
                 }
                 .box-2{
                     flex:1;
+                    order:1;
                 }
                 .box-3{
                     flex:1;
+                    order:3;
                 }
             </style>
     <div class="container-1">
